@@ -1,4 +1,4 @@
-# lg_stage01_module06
+# lg_stage02_module01
 
 # MySQL数据库
 
@@ -37,3 +37,16 @@
 ```sql
 
 ```
+
+
+
+# notes
+
+## mysql中 /*! ....*/ 含义
+
+```sql
+SHOW CREATE DATABASE zkproduct;
+CREATE DATABASE `zkproduct` /*!40100 DEFAULT CHARACTER SET utf8 */
+```
+mysql中 /*! ....*/ 不是注释，mysql为了保持兼容，它把一些特有的仅在mysql上用的语句放在/*!....*/中，
+这样这些语句如果在其他数据库中是不会被执行，但在mysql中它会执行。
